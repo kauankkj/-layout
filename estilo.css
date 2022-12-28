@@ -20,7 +20,7 @@ nav{
     text-align: center;
     background-color: #333;
     width: 100%;
-   height: 3rem;
+    height: 3rem;
 }
 
 nav a{
@@ -39,7 +39,7 @@ nav li{
     list-style-type: none;
     display: inline;
     color: white;
-    
+
 }
 
 nav a:hover {
@@ -76,7 +76,7 @@ header{
     flex: 30%;
     background-color: #f1f1f1;
     padding: 20px;
-    
+
 }
 
 .conteúdo{
@@ -115,21 +115,62 @@ header{
     }
 }
 /*CSS do form*/
-row:after{
+.row:after{
     content: "";
     display: table;
     clear: both;
 }
 
-label{
+.label{
     float: left;
-    flex: 25%;
-    margin: 6px;
-        
+    width: 25%;
+    margin-top: 6px;
+
 }
 
-input{
+.input{
     float: left;
-    flex: 75%;
+    width: 75%;
     margin-top: 6px;
 }
+
+/*para todos os inputs*/
+
+input{
+    color: purple;
+}
+
+/*especificos para alguns inputs*/
+input[type=text], input[type=email],input[type=tell], input[type=password]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type=submit]{
+    background-color: #4caf50;
+    float: right;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin: 5px;
+}
+input[type=submit]:hover{
+    background-color:#45a049;
+}
+input[type=reset]{
+    background-color: #af4c4c;
+    float: right;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin: 5px;
+}
+input[type=reset]:hover{
+    background-color: #eb6767;
+}
+
